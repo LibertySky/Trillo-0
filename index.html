@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+		<title>Trillo &mdash; Your all-in-one booking app</title>
+	</head>
+	<body>
+		<div class="showcase-heading">
+			<h2 class="decorative-heading">Book The Best Hotels</h2>
+		</div>
+
+		<div class="container">
+			<!-- Header -->
+			<header class="header">
+				<img src="img/logo.png" alt="Trillo logo" class="logo" />
+
+				<!-- Search form -->
+				<form action="#" class="search">
+					<input
+						type="text"
+						class="search__input"
+						placeholder="Search Flights, Hotels & Car for rent"
+					/>
+					<button class="search__button">
+						<svg class="search__icon">
+							<use
+								xlink:href="img/icons/icons-sprite.svg#icon-magnifying-glass"
+							></use>
+						</svg>
+					</button>
+				</form>
+
+				<!-- User Navigation -->
+				<nav class="user-nav">
+					<div class="user-nav__icon-box">
+						<svg class="user-nav__icon">
+							<use xlink:href="img/icons/icons-sprite.svg#icon-bookmark"></use>
+						</svg>
+						<span class="user-nav__notification">7</span>
+					</div>
+					<div class="user-nav__icon-box">
+						<svg class="user-nav__icon">
+							<use xlink:href="img/icons/icons-sprite.svg#icon-chat"></use>
+						</svg>
+						<span class="user-nav__notification">12</span>
+					</div>
+					<div class="user-nav__user">
+						<img
+							src="img/user.jpg"
+							alt="user photo"
+							class="user-nav__user-photo"
+						/>
+						<span class="user-nav__user-name">Lily</span>
+					</div>
+				</nav>
+			</header>
+
+			<div class="content">
+				<!-- Sidebar navigation -->
+				<nav class="sidebar">
+					<ul class="side-nav">
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/icons/icons-sprite.svg#icon-home"></use>
+								</svg>
+								<span>Home</span>
+							</a>
+						</li>
+						<li class="side-nav__item side-nav__item--active">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use
+										xlink:href="img/icons/icons-sprite.svg#icon-text-document-inverted"
+									></use>
+								</svg>
+								<span>Find a Hotel</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use
+										xlink:href="img/icons/icons-sprite.svg#icon-aircraft-take-off"
+									></use>
+								</svg>
+								<span>Book a Flight</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/icons/icons-sprite.svg#icon-key"></use>
+								</svg>
+								<span>Rent a Car</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/icons/icons-sprite.svg#icon-map"></use>
+								</svg>
+								<span>Find a Tour</span>
+							</a>
+						</li>
+					</ul>
+
+					<!-- Copyright Desktop -->
+					<div class="legal desktop">
+						Made with Flexbox by
+						<a href="https://libertyskygraphics.com/" target="_blank"
+							>LibertySky Graphics</a
+						>
+						for training purpose
+					</div>
+				</nav>
+
+				<!-- Main content -->
+				<main class="hotel-view">
+					<!-- Gallery -->
+					<div class="gallery">
+						<figure class="gallery__item">
+							<img
+								src="img/hotel-1.jpg"
+								alt="Hotel photo"
+								class="gallery__photo"
+							/>
+						</figure>
+
+						<figure class="gallery__item">
+							<img
+								src="img/hotel-2.jpg"
+								alt="Hotel photo"
+								class="gallery__photo"
+							/>
+						</figure>
+
+						<figure class="gallery__item">
+							<img
+								src="img/hotel-3.jpg"
+								alt="Hotel photo"
+								class="gallery__photo"
+							/>
+						</figure>
+					</div>
+
+					<!-- Hotel overview -->
+
+					<!-- Hotel header -->
+					<div class="overview">
+						<h1 class="overview__heading">Troical Garden Resort & SPA</h1>
+
+						<div class="overview__stars">
+							<svg class="overview__icon-star">
+								<use xlink:href="img/icons/icons-sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/icons/icons-sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/icons/icons-sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/icons/icons-sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/icons/icons-sprite.svg#icon-star"></use>
+							</svg>
+						</div>
+
+						<div class="overview__location">
+							<svg class="overview__icon-location">
+								<use
+									xlink:href="img/icons/icons-sprite.svg#icon-location-pin"
+								></use>
+							</svg>
+							<button class="btn-inline">
+								Punta Cana, Dominican Republic
+							</button>
+						</div>
+
+						<div class="overview__rating">
+							<div class="overview__rating-average">
+								<p>Rating</p>
+								<span id="rating">8.6</span>
+							</div>
+							<div class="overview__rating-count">321 voted</div>
+						</div>
+					</div>
+
+					<!-- Hotel detailed info -->
+					<div class="detail">
+						<!-- Hotel description -->
+						<div class="description">
+							<p class="about">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+								nisi cupiditate culpa ducimus est. Corrupti sunt sapiente sequi
+								ex cum, rerum a voluptas illum eos, eius eveniet? Eaque
+								doloremque vel ab repellendus laboriosam odit aut eveniet ut
+								amet autem minima, animi eius obcaecati minus aliquam! Aperiam
+								quas porro mollitia aliquid.
+							</p>
+							<p class="about">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+								consequatur eveniet commodi quasi dolores tenetur velit itaque
+								cum excepturi tempora. Itaque corporis numquam tenetur facere?
+							</p>
+							<ul class="amenities-list">
+								<li class="amenities-list__item">First line at the beach</li>
+								<li class="amenities-list__item">All inclusive</li>
+								<li class="amenities-list__item">Free airport transfer</li>
+								<li class="amenities-list__item">Free Wi-Fi</li>
+								<li class="amenities-list__item">Pets allowed</li>
+								<li class="amenities-list__item">Room service 24/7</li>
+								<li class="amenities-list__item">Kids area</li>
+								<li class="amenities-list__item">SPA & Casino</li>
+							</ul>
+							<div class="recommend">
+								<p class="recommend__count">
+									Lucy and 4 other recommend this hotel
+								</p>
+								<div class="recommend__friends">
+									<img
+										src="img/user-5.jpg"
+										alt="Friend photo"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-3.jpg"
+										alt="Friend photo"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-2.jpg"
+										alt="Friend photo"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-4.jpg"
+										alt="Friend photo"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-6.jpg"
+										alt="Friend photo"
+										class="recommend__photo"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<!-- User Reviews -->
+						<div class="user-reviews">
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Molestias atque blanditiis culpa vel aliquam error iusto.
+									Explicabo sint eaque tempore.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-1.jpg"
+										alt="user photo"
+										class="review__photo"
+									/>
+									<div class="review__user-box">
+										<p class="review__user-name">Jane Chow</p>
+										<p class="review__user-date">Jan 21, 2020</p>
+									</div>
+									<div class="review__rating">7.8</div>
+								</figcaption>
+							</figure>
+
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+									quos nesciunt neque repellendus quam officia.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-7.jpg"
+										alt="user photo"
+										class="review__photo"
+									/>
+									<div class="review__user-box">
+										<p class="review__user-name">Tyrone Wilson</p>
+										<p class="review__user-date">Feb 12, 2020</p>
+									</div>
+									<div class="review__rating">8.0</div>
+								</figcaption>
+							</figure>
+							<button class="btn-inline">
+								See all reviews <span>&rarr;</span>
+							</button>
+						</div>
+					</div>
+					<div class="cta">
+						<h2 class="cta-heading">
+							Good news!<br />We have free rooms for your selected dates
+						</h2>
+						<button class="btn__book">
+							<span class="btn__book-visible">Book now</span>
+							<span class="btn__book-hidden">Only 4 rooms left!</span>
+						</button>
+					</div>
+				</main>
+			</div>
+
+			<!-- Copyright Mobile -->
+			<footer>
+				<div class="legal mobile">
+					Made with Flexbox by
+					<a href="https://libertyskygraphics.com/" target="_blank"
+						>LibertySky Graphics</a
+					>
+					for training purpose
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
